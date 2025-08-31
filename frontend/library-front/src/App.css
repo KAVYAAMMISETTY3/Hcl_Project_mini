@@ -1,0 +1,186 @@
+  General Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fbfc;
+  color: #333;
+}
+
+/* Header*/
+ .header {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  padding: 20px 0;
+  text-align: left;
+  font-size: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+} */
+
+/* Navbar */
+ .navbar {
+ background-color: #e3f2fd;
+  color: #0d47a1;
+  display: flex;
+  justify-content:right ;
+  gap: 30px;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.navbar1 h1{
+  color: #0d47a1;
+  text-align:left;
+}
+.navbar1 h2{
+  color: #0d47a1;
+  text-align:left;
+}
+ .navsec{
+  align-items: right;
+}
+.navbar a {
+  
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color:#68afe2;
+} */
+
+/* Home Page */
+ .home {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(to right, #e3f2fd, #f0f4ff);
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  color: #0d47a1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align:left;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.cta-button {
+  background-color:#306189;
+  color: white;
+  
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+ justify-content: left;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #42a5f5;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: white;
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+}
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0d47a1;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #64b5f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #42a5f5;
+}   

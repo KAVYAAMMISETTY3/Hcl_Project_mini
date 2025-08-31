@@ -1,0 +1,171 @@
+.user-profile-page {
+  display: flex;
+  height: 100vh;
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+  width: 80px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.sidebar div {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.top-bar h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.top-bar p {
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.search-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-profile input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.profile-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.profile-info h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.profile-info p {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.edit-btn {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.profile-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.profile-form label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.save-btn {
+  grid-column: span 2;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+.email-section {
+  margin-top: 2rem;
+}
+
+.email-section h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.email-section p {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.email-section button {
+  margin-top: 0.5rem;
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 0.875rem;
+  cursor: pointer;
+}

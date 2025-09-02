@@ -23,11 +23,9 @@ public class Transaction {
     @Column(name = "return_date")
     private LocalDate returnDate;
  
-    @Column(name = "fine")
-    private Double fine;
  
 
-    // calculated if returned late
+    
     // getters & setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
@@ -41,6 +39,5 @@ public class Transaction {
     public void setDueDate(LocalDate dueDate) { this.dueDate = dueDate; }
     public LocalDate getReturnDate() { return returnDate; }
     public void setReturnDate(LocalDate returnDate) { this.returnDate = returnDate; }
-    public Double getFine() { return fine; }
-    public void setFine(Double fine) { this.fine = fine; }
+    
 }

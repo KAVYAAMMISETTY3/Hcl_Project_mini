@@ -18,6 +18,21 @@ public class UserService {
  
     @Autowired
     private UserRepository userRepository;
+    //admin
+    
+    public Optional<UserResponseDTO> adminLogin(UserLoginDTO dto) {
+        String adminEmail = "admin@library.com";
+        String adminPassword = "Admin@123"; // You can hash this if needed
+
+        if (dto.getEmail().equals(adminEmail) && dto.getPassword().equals(adminPassword)) {
+            return Optional.of(new UserResponseDTO(0L, "Admin", adminEmail, Role.ADMIN));
+        }
+
+        return Optional.empty();
+    }
+    public boolean existsByEmail(String email) {
+    	return userRepository.findByEmail(email).isPresent();
+    }
  
     // Register new user
     public UserResponseDTO registerUser(UserRegisterDTO dto) {
@@ -25,7 +40,7 @@ public class UserService {
         user.setName(dto.getName());
         user.setEmail(dto.getEmail());
         user.setPassword(dto.getPassword()); //  later: hash password
-        user.setRole(dto.getRole() != null ? dto.getRole() : Role.USER);
+        user.setRole(Role.USER);
  
         User saved = userRepository.save(user);
         return new UserResponseDTO(saved.getId(), saved.getName(), saved.getEmail(), saved.getRole());
@@ -55,6 +70,9 @@ public class UserService {
     public void deleteUser(Long id) {
         userRepository.deleteById(id);
     }
+
+
     
     
 }
+

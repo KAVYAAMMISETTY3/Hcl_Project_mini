@@ -5,7 +5,7 @@ import '../styles/Auth.css';
 import Navbar from '../components/Navbar';
 
 function Register() {
-  const [role, setRole] = useState('user');
+ 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -31,7 +31,7 @@ function Register() {
       name,
       email,
       password,
-      role: role.toUpperCase() // "USER" or "ADMIN"
+      role:"USER"
     };
 
     try {
@@ -42,13 +42,7 @@ function Register() {
       });
 
       alert("Registration successful!");
-
-      // Redirect based on role
-      if (role === 'admin') {
-        navigate('/admin-login');
-      } else {
-        navigate('/user-login');
-      }
+      navigate('/user-login');
     } catch (error) {
       console.error("Registration error:", error);
       if (error.response && error.response.data) {
@@ -63,12 +57,9 @@ function Register() {
     <>
     <Navbar/>
     <div className="auth-container">
-      <h2>Register as {role === 'admin' ? 'Admin' : 'User'}</h2>
+      <h2>Register as User</h2>
       <form className="auth-form" onSubmit={handleRegister}>
-        <select value={role} onChange={(e) => setRole(e.target.value)}>
-          <option value="user">User</option>
-          <option value="admin">Admin</option>
-        </select>
+        
         <input
           type="text"
           placeholder="Full Name"
@@ -106,3 +97,5 @@ function Register() {
 }
 
 export default Register;
+
+

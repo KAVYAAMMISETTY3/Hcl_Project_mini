@@ -15,6 +15,7 @@ import './App.css';
 import UserDashboard from './pages/user/UserDashboard';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import UserProfile from './pages/user/UserProfile';
+import AdminProfile from './pages/admin/AdminProfile';
 import UserSettings from './pages/user/UserSettings';
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           
 
            <Route path="/admin-dashboard" element={<AdminDashboard />}/>
+           <Route path="/admin/profile" element={<AdminProfile />} /> 
 
           
         </Routes>

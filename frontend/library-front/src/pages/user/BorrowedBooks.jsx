@@ -50,7 +50,7 @@ function BorrowedBooks() {
                 <div className="brand"><h2>Library Management</h2></div>
                 <div className="welcome"><h2>Welcome to the Library, {userName}!</h2></div>
                 <div className="profile-menu">
-                  <button onClick={() => setShowDropdown(!showDropdown)}>My Profile ⬇</button>
+                  <button onClick={() => setShowDropdown(!showDropdown)}>My Profile </button>
                   {showDropdown && (
                     <div className="dropdown-menu">
                       <button onClick={() => handleDropdownClick('profile')}>

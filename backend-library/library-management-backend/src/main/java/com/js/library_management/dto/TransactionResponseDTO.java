@@ -7,31 +7,74 @@ public class TransactionResponseDTO {
     private String userName;
     private String bookTitle;
     private LocalDate borrowDate;
+    private LocalDate dueDate;
     private LocalDate returnDate;
-    private Double fine;
-
+//    private Double fine;
+ 
     public TransactionResponseDTO(Long transactionId, String userName, String bookTitle,
-                                  LocalDate borrowDate, LocalDate returnDate, Double fine) {
-        this.transactionId = transactionId;
-        this.userName = userName;
-        this.bookTitle = bookTitle;
-        this.borrowDate = borrowDate;
-        this.returnDate = returnDate;
-        this.fine = fine;
+                                  LocalDate borrowDate, LocalDate dueDate, LocalDate returnDate /*Double fine*/) {
+        this.setTransactionId(transactionId);
+        this.setUserName(userName);
+        this.setBookTitle(bookTitle);
+        this.setBorrowDate(borrowDate);
+        this.setDueDate(dueDate);
+        this.setReturnDate(returnDate);
+//        this.setFine(fine);
     }
-
-    // Getters and setters
-    public Long getTransactionId() { return transactionId; }
-    public String getUserName() { return userName; }
-    public String getBookTitle() { return bookTitle; }
-    public LocalDate getBorrowDate() { return borrowDate; }
-    public LocalDate getReturnDate() { return returnDate; }
-    public Double getFine() { return fine; }
-
-    public void setTransactionId(Long transactionId) { this.transactionId = transactionId; }
-    public void setUserName(String userName) { this.userName = userName; }
-    public void setBookTitle(String bookTitle) { this.bookTitle = bookTitle; }
-    public void setBorrowDate(LocalDate borrowDate) { this.borrowDate = borrowDate; }
-    public void setReturnDate(LocalDate returnDate) { this.returnDate = returnDate; }
-    public void setFine(Double fine) { this.fine = fine; }
+ 
+	public Long getTransactionId() {
+		return transactionId;
+	}
+ 
+	public void setTransactionId(Long transactionId) {
+		this.transactionId = transactionId;
+	}
+ 
+	public String getUserName() {
+		return userName;
+	}
+ 
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+ 
+	public LocalDate getBorrowDate() {
+		return borrowDate;
+	}
+ 
+	public void setBorrowDate(LocalDate borrowDate) {
+		this.borrowDate = borrowDate;
+	}
+ 
+	public LocalDate getDueDate() {
+		return dueDate;
+	}
+ 
+	public void setDueDate(LocalDate dueDate) {
+		this.dueDate = dueDate;
+	}
+ 
+	public String getBookTitle() {
+		return bookTitle;
+	}
+ 
+	public void setBookTitle(String bookTitle) {
+		this.bookTitle = bookTitle;
+	}
+ 
+	public LocalDate getReturnDate() {
+		return returnDate;
+	}
+ 
+	public void setReturnDate(LocalDate returnDate) {
+		this.returnDate = returnDate;
+	}
+// 
+//	public Double getFine() {
+//		return fine;
+//	}
+// 
+//	public void setFine(Double fine) {
+//		this.fine = fine;
+//	}
 }
